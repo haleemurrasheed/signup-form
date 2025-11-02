@@ -1,0 +1,144 @@
+/* === GENERAL RESET === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cinza, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Norse;
+  src: url(Norse-Bold.otf);
+}
+
+/* === LAYOUT === */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* === LEFT SIDE === */
+.image-side {
+  background: url('img.jpg') no-repeat center center/cover;  
+  width: 40%;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+                                                
+}
+
+.logo-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+.logo {
+  width: 40%;
+  margin-right: 15px;
+  border-radius: 50%;
+  
+}
+
+.logo-box h1 {
+
+  font-size: 5em;
+  letter-spacing: 3px;
+  font-family: 'Norse';
+
+
+}
+
+.credit {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.credit a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* === RIGHT SIDE === */
+.form-side {
+  background: #E5E7EB;
+  flex: 1;
+  padding: 50px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+}
+/* .form-side :not(h2,p, button) { 
+    
+} */
+
+label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* === FOCUS AND ERROR STYLES === */
+input:focus {
+  outline: none;
+  border-color: #1E90FF;
+  box-shadow: 0 0 5px #1E90FF;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+/* === BUTTON === */
+button {
+  grid-column: 1 / span 2;
+  background: #596D48;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 25%;
+}
+
+button:hover {
+  background: #6d8059;
+}
+
+.login {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+.login a {
+  color: #596D48;
+  text-decoration: none;
+}
